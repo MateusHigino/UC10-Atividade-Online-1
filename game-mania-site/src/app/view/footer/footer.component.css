@@ -1,0 +1,61 @@
+footer {
+    background-color: rgba(212, 37, 14, 0.87);
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    margin-top: 100px;
+    grid-template-areas: 
+      "enderecos telefones"
+      "emails midias-sociais";
+  }
+  
+  #img-rodape, #menu-rodape {
+    display: none
+  }
+  
+  #menu-rodape ul {
+    list-style: none;
+    padding-inline-start: 0px;
+  }
+  
+  .enderecos {
+    grid-area: enderecos;
+  }
+  .emails {
+    grid-area: emails;
+  }
+  .telefones {
+    grid-area: telefones;
+  }
+  
+  .img-logo {
+    width: 98px;
+  }
+  
+  #img-rodape, #menu-rodape {
+    display: block;
+  }
+  #img-rodape {
+    grid-area: logotipo;
+  }
+  #menu-rodape {
+    grid-area: menu-rodape;
+  }
+  
+  footer {
+    grid-template-areas: 
+      "logotipo emails midias-sociais"
+      "logotipo enderecos menu-rodape"
+      "logotipo telefones menu-rodape";
+  }
+  
+  #img-rodape, #menu-rodape {
+    display: block;
+  }
+  #img-rodape {
+    grid-area: logotipo;
+  }
+  #menu-rodape {
+    grid-area: menu-rodape;
+  } 
+
